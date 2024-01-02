@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const { scb } = require('./extractor')
+const extractor = require('./extractor')
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -16,11 +16,10 @@ app.post('/api/slip', (req, res) => {
     let result = null
     switch (body.album) {
         case 'SCB Easy':
-            result = scb(body)
+            result = extractor.scb(body)
             break;
     }
-
-    res.json({ time: result.date, amount: result.amount })
+    res.json(result)
 })
 
 app.listen(port, () => {
