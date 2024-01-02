@@ -81,3 +81,6 @@ node index.js
 
 ### Disclaimer
 ในตัวอย่าง ทางผู้เขียนใช้งานธนาคาร SCB เป็นหลัก ในไฟล์ extractor.js จึงมีแต่การ extract ข้อมูล Slip ของธนาคาร SCB 
+
+### การประยุกต์ใช้งาน
+ทางผู้เขียนได้ใช้งาน app money tracker อยู่แล้ว และเอา data ที่ได้จาก slip ไปบันทุกใน app money tracker แบบอัตโนมัติ โดยการ set automation ใน shortcuts ให้รัน shortcuts ทุกๆ 23:00 ของทุกวัน เพื่อให้บันทึกข้อมูลใน slip ทุกๆวัน
