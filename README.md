@@ -17,7 +17,7 @@
 
 ## การติดตั้ง (Server)
 ```bash
-git clone git@github.com:iaunn/thai-slip-ocr.git
+git clone git@github.com:iaunn/shortcuts-ocr-thai-slip.git
 npm install
 node index.js
 ```
